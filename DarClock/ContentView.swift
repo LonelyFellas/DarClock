@@ -21,7 +21,6 @@ struct DateObj {
 struct ContentView: View {
     @State private var currentTime = Date();
     let isChineseLang = (Locale.preferredLanguages.first ?? "zh").contains("zh")
-    @State private var brightness: CGFloat = UIScreen.main.brightness
     
     
     var body: some View {
